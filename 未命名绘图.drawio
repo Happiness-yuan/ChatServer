@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-24T07:12:21.236Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="ho4ArUmNIndDa5YC4hjc" version="21.6.9" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-24T07:27:45.421Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="7f0dcO16KYwE99BB9CLb" version="21.6.9" type="github">
   <diagram name="第 1 页" id="7tX598iaDqBV2XGCMpFz">
     <mxGraphModel dx="441" dy="266" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -90,8 +90,8 @@
         <mxCell id="7Q1Yj3Lfi6J98Hcch845-22" value="不符合CPU型号，返回" style="whiteSpace=wrap;html=1;align=center;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="145" y="1129" width="150" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="7Q1Yj3Lfi6J98Hcch845-25" value="_main函数" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="460" y="80" width="120" height="60" as="geometry" />
+        <mxCell id="7Q1Yj3Lfi6J98Hcch845-25" value="save_boot_params_ret中调用&lt;br&gt;_main函数(arch/arm/lib/crt0.S)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="80" width="170" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
