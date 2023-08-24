@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-24T06:59:50.220Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="0OHp5fdhOOhBYfzNIv6Z" version="21.6.9" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-24T07:08:29.243Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="KDdmAMEPOjPWT2l8WBf8" version="21.6.9" type="github">
   <diagram name="第 1 页" id="7tX598iaDqBV2XGCMpFz">
     <mxGraphModel dx="794" dy="478" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -72,9 +72,14 @@
           <mxGeometry x="80" y="740" width="280" height="40" as="geometry" />
         </mxCell>
         <mxCell id="7Q1Yj3Lfi6J98Hcch845-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7Q1Yj3Lfi6J98Hcch845-19" target="7Q1Yj3Lfi6J98Hcch845-22">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="935" />
+              <mxPoint x="460" y="120" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="7Q1Yj3Lfi6J98Hcch845-24" value="调用s_init函数" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="7Q1Yj3Lfi6J98Hcch845-23">
+        <mxCell id="7Q1Yj3Lfi6J98Hcch845-24" value="调用s_init函数&lt;br&gt;arch/arm/cpu/armv7/mx6/soc.c" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="7Q1Yj3Lfi6J98Hcch845-23">
           <mxGeometry x="-0.1434" y="-4" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -82,8 +87,8 @@
         <mxCell id="7Q1Yj3Lfi6J98Hcch845-19" value="第22行设置sp指向CONFIG_SYS_INIT_SP_ADDR（include/config/mx6ullevk.h)&lt;br&gt;IRAM_BASE_ADDR=0x00900000&lt;br&gt;IRAM_SIZE=0x00020000(128KB)&lt;br&gt;所以，&lt;br&gt;CONFIG_SYS_INIT_RAM_ADDR=IRAM_BASE_ADDR=0X00900000&lt;br&gt;CONFIG_SYS_INIT_RAM_SIZE=IRAM_SIZE=0X00020000=128KB&lt;br&gt;同时，由于GENERATED_GBL_DATA_SIZE=256(include/generated/generic-asm-offset.h)，&lt;br&gt;因此，&lt;br&gt;CONFIG_SYS_INIT_SP_OFFSET=0x00020000 - 256 = 0x1FF00&lt;br&gt;CONFIG_SYS_INIT_SP_ADDR=0x00900000+0x1FF00=0x0091FF00" style="whiteSpace=wrap;html=1;rounded=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="22.5" y="820" width="395" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="7Q1Yj3Lfi6J98Hcch845-22" value="" style="whiteSpace=wrap;html=1;align=left;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="160" y="1130" width="120" height="60" as="geometry" />
+        <mxCell id="7Q1Yj3Lfi6J98Hcch845-22" value="不符合CPU型号，返回" style="whiteSpace=wrap;html=1;align=left;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="100" width="150" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
